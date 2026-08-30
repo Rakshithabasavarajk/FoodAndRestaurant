@@ -165,8 +165,6 @@ section .main .main_image img{
     width:450px;
      background: #fff;
 
-
-
 }
 
 .about .about_main .about_text h1{
@@ -189,6 +187,57 @@ section .main .main_image img{
     line-height: 23px;
     margin-top: 20px;
 }
+
+.about .about_main .about_text .about_services{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about .about_main .about_text .about_services .s_1{
+    display: flex;
+    align-items: center;
+    width:180px;
+    background: #ececec;
+    padding: 10px;
+    border:2px solid #facc22;
+    cursor: pointer; 
+}
+
+.about .about_main .about_text .about_services .s_1 i{
+    color:black;
+    margin:5px 10px 5px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.about .about_main .about_text .about_services .s_1 i{
+    color:#facc22
+}
+
+.about .about_main .about_text .about_services .s_1:hover i{
+    color:#facc22
+}
+
+.about .about_main .about_text .about_services .s_1 a{
+  text-decoration: none;
+  color:black;
+  font-size:16px;  
+}
+.about .about_main .about_text .about_btn i{
+    font-size:15px;
+    margin-right:8px;
+}
+.about .about_main .about_text .about_btn{
+    position:relative;
+    top:35px;
+    padding:10px 20px;
+    border:2px solid #facc22;
+    text-decoration: none;
+    color:black;
+    z-index:5;
+    transition: 0.3s;
+}
+
 
 @keyframes animate{
     0%
