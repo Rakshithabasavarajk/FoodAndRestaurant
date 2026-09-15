@@ -1,5 +1,14 @@
 
-Style · CSS
+@font-face {
+    font-family: 'P22Grenville';
+    src: url('fonts/P22Grenville-Regular.woff2') format('woff2'),
+         url('fonts/P22Grenville-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Norwester';
+    src: url('fonts/Norwester-Regular.woff2') format('woff2'),
+         url('fonts/Norwester-Regular.woff') format('woff');
+}
 *{
     margin:0;
     padding: 0;
@@ -292,7 +301,7 @@ section .main .main_image img{
 
 .menu .menu_box .menu_card {
     width:450px;
-    height:575px;
+    height:570px;
     margin:0 auto;
     background-image:url("https://in.pinterest.com/pin/922956517389211680/");
     background-position: center;
@@ -303,19 +312,37 @@ section .main .main_image img{
     border-radius:10px;
     box-shadow:3px 3px 10px rgba(0,0,0,0.2);
 }
- 
+ .menu .menu_box .menu_card .menu_img{
+    margin:0 auto;
+    width:420px;
+    height:250px;
+    margin-bottom:15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.7);
+ }
 .menu .menu_box .menu_card .menu_img img {
-  width:300px;
-  height:250px;
-  margin-bottom: 15px;
-  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  /* margin-bottom: 15px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2); */
 }
-.menu .menu_box .menu_card .menu_text {
+.menu .menu_box .menu_card .menu_text h2{
     font-size:larger;
+    margin-bottom:15px;
 }
+.menu .menu_box .menu_card .menu_text p{
+    line-height:21px;
+    margin-bottom:15px;
+    margin :0 auto;
+    width:400px;
+
+}
+
 
 .menu .menu_box .menu_card .menu_text .menu_icon{
     color:#facc22;
+    margin:8px 0;
 } 
 
 .menu .menu_box .menu_card .menu_text .price{
@@ -336,6 +363,7 @@ section .main .main_image img{
     border:2px solid #facc22;
     position:relative;
     transition:0.3s;
+    top:20px;
     z-index:5;
     transition:0.3s;
 }
@@ -367,22 +395,20 @@ section .main .main_image img{
 
 /*Banner*/
 .banner{
-  
+    width: 100%;
+    height:85vh;
     margin:10px 0;
-    background-image:url("https://i.pinimg.com/736x/72/e1/b6/72e1b66d7fd4f472f264f2b7dd2baadc.jpg");
-      width: 100%;
-    height:50vh;
+    background-image:url("https://i.pinimg.com/736x/76/e4/66/76e4666e963f1c94f57791fd1edb71b8.jpg");
     background-size:cover;    
     background-position: center;
-    display:flex;
+    /* display:flex;
+    flex-direction:row; 
     align-items:center;
-    justify-content:center;
-
-
+    justify-content:center; */
 }
 .banner h1{
-    font-family:P22Grenville;
-    color:#191817;
+     font-family:P22Grenville;
+    color:rgb(235, 235, 13);
     font-size:100px;
     display:flex;
     align-items:center;
@@ -401,8 +427,100 @@ section .main .main_image img{
 .banner .banner_center h2{
   font-size:60px;
   margin-right :25px;
-  font-family:Norwester;
+  font-family:Norwester;/*imp*/ 
   color:aliceblue; 
+}
+.banner .banner_center h2 span{
+    font-size: 24px;
+    margin-left:45px;
+    position:relative;
+    bottom:15px;
+    font-family:Norwester;
+    color:#fff
+}
+
+.banner .banner_btn{
+    color:#fff;
+    border:2px solid yellow;
+    padding:10px 20px;
+    text-decoration:none;
+    position:relative;
+     top:10%;
+    left:46%; 
+    z-index:5;
+}
+
+.banner .banner_btn i{
+    margin-right:8px;
+}
+.banner .banner_btn::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background:yellow;
+    transition:0.3s;
+     z-index:-1
+}
+
+.banner .banner_btn:hover::before{
+    width:100%;
+    top:unset;
+    bottom:0;
+} 
+.gallery{
+     width:100%;
+    height:100vh;
+    padding:75px 0;
+
+}
+.gallery h1{
+  font-size:60px;
+  margin-right :25px;
+  font-family:Norwester;/*imp*/ 
+  color:rgb(9, 9, 9);
+  text-align:center;
+
+
+}
+.gallery h1 span{
+    color:#facc22;
+    margin-right: 15px;
+
+}
+
+.gallery .gallery_box{
+    width:95%;
+    margin:50px auto 0 auto;
+    display:grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+}
+
+.gallery .gallery_box .gallery_img{
+
+width:470px;
+height:350px;
+margin:0 auto;
+border-radius:5px;
+overflow:hidden;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.gallery .gallery_box .gallery_img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s
+}
+.gallery .gallery_box .gallery_img:hover img{
+    transform:scale(1.1);
 }
 
 
