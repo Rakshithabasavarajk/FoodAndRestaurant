@@ -523,6 +523,203 @@ box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     transform:scale(1.1);
 }
 
+/*OFFER*/
+
+.offer{
+     width:100%;
+     height:auto;
+     margin-bottom:20px;
+}
+.offer .offer_box{
+    width:95%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0 15px;
+    margin:0 auto;
+}
+.offer .offer_box .offer_card1{
+    width:720px;
+    height:470px;
+}
+
+.offer .offer_box .offer_card1 .offer_img {
+width:720px;
+height:470px;
+/* margin:0 auto;
+border-radius:5px;
+overflow:hidden;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.3); */
+
+}
+
+.offer .offer_box .offer_card1 .offer_img img
+{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position: center;
+  /* border-radius:5px;
+  cursor:pointer;
+  transition: 0.3s;*/
+} 
+
+.offer .offer_box .offer_card1 .offer_tag{
+    position: relative;
+    bottom: 400px;
+    color:#fff;
+    padding:0 35px;
+
+
+}
+.offer .offer_box .offer_card1 .offer_tag h2{
+    font-size: 45px;
+}
+
+.offer .offer_box .offer_card1 .offer_tag h1{
+    font-family:QuillScript;
+    font-size:60px;
+    color:#facc22;
+}
+
+.offer .offer_box .offer_card1 .offer_tag p{
+    margin-top: 30px;
+    width:200px;
+    text-align: justify;
+    line-height: 22px;
+
+
+}
+.offer .offer_box .offer_card1 .offer_tag .offer_btn{
+   color:#fff;
+   border:2px solid #facc22;
+   padding: 10px 20px; 
+   text-decoration :none;
+   position: relative;
+   top:30px;
+   z-index:2;
+   transition:0.3s;
+}
+
+.offer .offer_box .offer_card1 .offer_tag .offer_btn::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: yellow;
+    width:0;
+    height:100%;
+    transition: 0.3s;
+    z-index:-1;
+
+}
+.offer .offer_box .offer_card1 .offer_tag .offer_btn:hover::before{
+    width:100%;
+
+}
+.offer .offer_box .offer_card1 .offer_tag .offer_btn i{
+    margin-right: 8px;
+}
+
+
+/*offer2*/
+
+
+.offer{
+     width:100%;
+     height:auto;
+     margin-bottom:20px;
+}
+.offer .offer_box{
+    width:95%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0 15px;
+    margin:0 auto;
+}
+.offer .offer_box .offer_card2{
+    width:720px;
+    height:470px;
+}
+
+.offer .offer_box .offer_card2 .offer_img {
+width:720px;
+height:470px;
+/* margin:0 auto;
+border-radius:5px;
+overflow:hidden;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.3); */
+
+}
+
+.offer .offer_box .offer_card2 .offer_img img
+{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position: center;
+  /* border-radius:5px;
+  cursor:pointer;
+  transition: 0.3s;*/
+} 
+
+.offer .offer_box .offer_card2 .offer_tag{
+    position: relative;
+    bottom: 400px;
+    color:#fff;
+    padding:0 35px;
+
+
+}
+.offer .offer_box .offer_card2 .offer_tag h2{
+    font-size: 45px;
+}
+
+.offer .offer_box .offer_card2 .offer_tag h1{
+    font-family:QuillScript;
+    font-size:60px;
+    color:#facc22;
+}
+
+.offer .offer_box .offer_card2 .offer_tag p{
+    margin-top: 30px;
+    width:200px;
+    text-align: justify;
+    line-height: 22px;
+
+
+}
+.offer .offer_box .offer_card2 .offer_tag .offer_btn{
+   color:#fff;
+   border:2px solid #facc22;
+   padding: 10px 20px; 
+   text-decoration :none;
+   position: relative;
+   top:30px;
+   z-index:2;
+   transition:0.3s;
+}
+
+.offer .offer_box .offer_card2 .offer_tag .offer_btn::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: yellow;
+    width:0;
+    height:100%;
+    transition: 0.3s;
+    z-index:-1;
+
+}
+.offer .offer_box .offer_card2 .offer_tag .offer_btn:hover::before{
+    width:100%;
+
+}
+.offer .offer_box .offer_card2 .offer_tag .offer_btn i{
+    margin-right: 8px;
+}
+
+
 
 
  
